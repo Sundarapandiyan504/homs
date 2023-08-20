@@ -14,13 +14,13 @@ res.send("gkgjvhvgj")
 })
 // Your POST endpoint
 app.post('/post', (req, res) => {
-   const { email, password } = req.body;
   // Handle the incoming data here\
-  console.log(email,password);
+  console.log("hi");
+  res.send("hi yhis is node")
   console.log('Data received:', req.body);
 
   // Send a response back to the client
-   // res.status(200).json({ message: 'Login successful' });
+  // res.json({ message: 'Data received successfully' });
 });
 
 const port = 3000;
