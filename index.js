@@ -20,7 +20,7 @@ app.post('/post', (req, res) => {
   console.log('Data received:', req.body);
 
   // Send a response back to the client
-  res.json({ message: 'Data received successfully' });
+   res.status(200).json({ message: 'Login successful' });
 });
 
 const port = 3000;
